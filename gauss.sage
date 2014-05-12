@@ -9,6 +9,8 @@ class GaussianRational:
         return GaussianRational(self.x+right.x, self.y+right.y)
     def __sub__(self, right):
         return GaussianRational(self.x-right.x, self.y-right.y)
+    def __neg__(self):
+        return  GaussianRational(self.real * -1, self.imag * -1)
     def __crazy__(self, crazy):
         return 'I'm crazy'
 
